@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник в каждый дом</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header style="display: flex; justify-content: space-between">
+    <div style="display: flex" class="logo">
+        <img style="margin-left: 60px" src="logo.svg" alt="Праздник в каждый дом">
+        <p style="margin-left: 20px">Праздник в каждый дом</p>
+    </div>
+    <nav style="display: flex; color:white">
+        <ul style="margin-right: 60px;margin-top: auto; margin-bottom: auto">
+            <li><a href="#">Акции</a></li>
+            <li><a href="search.html">Поиск</a></li>
+            <li><a href="#">Управление бронированием</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Подарим волшебство для Ваших детей!</h1>
+        <p>Компания "Праздник в каждый дом" организует незабываемые детские праздники.</p>
+        <div class="search-form">
+            <form>
+                <div class="form-group">
+                    <label for="region">Регион</label>
+                    <input type="text" id="region" name="region" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата мероприятия</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="participants">Количество участников</label>
+                    <input type="number" id="participants" name="participants" min="1" max="50" required>
+                </div>
+                <button class="fl" type="submit">Поиск</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="about">
+        <h2 style="margin-left: 20px">О компании</h2>
+        <p style="margin-left: 20px">Наша цель - сделать праздничные дни незабываемыми для детей и их родителей.</p>
+        <div style="display: flex;justify-content: center;flex-direction: column;align-items: center">
+            <p>"Праздник в каждый дом подарил нашей семье незабываемые впечатления!"</p>
+        </div>
+    </div>
+
+    <section class="features">
+        <h2 style="margin-left: 20px">Как это работает</h2>
+        <div  class="feature-item">
+            <img style="width: 32px;height: 32px" src="one.svg" alt="Шаг 1">
+            <div style="display: flex; flex-direction: column; ">
+                <h3>Выберите дату</h3>
+                <p style="margin-top: -10px">Укажите дату, когда вы хотите провести праздник.</p>
+            </div>
+
+        </div>
+        <div class="feature-item">
+            <img style="width: 32px;height: 32px" src="two.svg" alt="Шаг 2">
+            <div style="display: flex; flex-direction: column; ">
+                <h3>Выберите локацию</h3>
+                <p style="margin-top: -10px">Найдите подходящую локацию для вашего праздника.</p>
+            </div>
+
+        </div>
+        <div class="feature-item">
+            <img style="width: 32px;height: 32px" src="three.svg" alt="Шаг 3">
+            <div style="display: flex; flex-direction: column; ">
+                <h3>Забронируйте</h3>
+                <p style="margin-top: -10px">Забронируйте выбранную зону и дополнительные услуги.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="promotions">
+        <h2>Акции</h2>
+        <div class="promotion-item">
+            <img src="promotion1.jpg" alt="Акция 1">
+            <h3>Скидка 20% на аренду</h3>
+            <p>Успейте забронировать локацию со скидкой 20% до конца месяца.</p>
+            <a href="#" class="btn">Подробнее</a>
+        </div>
+        <div class="promotion-item">
+            <img src="promotion2.jpg" alt="Акция 2">
+            <h3>Бесплатный аниматор</h3>
+            <p>При бронировании праздника на 20 человек - аниматор в подарок!</p>
+            <a href="#" class="btn">Подробнее</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Подпишитесь на закрытые акции</h2>
+        <form>
+            <input type="email" placeholder="Введите email" required>
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="contact">
+        <p>Телефон: 8 (800) 111-20-20</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="search.html">Поиск</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Управление бронированием</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
